@@ -2,6 +2,7 @@ package com.abo.mddemo;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -25,8 +26,8 @@ public class MainActivity extends AppCompatActivity {
         toolbar.setTitle("编程语言");
         setSupportActionBar(toolbar);
         getSupportActionBar().setHomeButtonEnabled(true);
-        mRecyclerView = (RecyclerView) findViewById(R.id.recyclerView);
 
+        mRecyclerView = (RecyclerView) findViewById(R.id.recyclerView);
 //        mRecyclerView.setHasFixedSize(true);
         //创建默认的线性
         mLayoutManger = new LinearLayoutManager(this);
@@ -54,7 +55,8 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                String text = "I love" + mTextView.getText()+ ".";
+                String text = "I love " + mTextView.getText()+ ".";
+                Snackbar.make(v,text,Snackbar.LENGTH_LONG).show();
 
             }
         }
