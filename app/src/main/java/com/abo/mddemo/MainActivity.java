@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         mLayoutManger = new LinearLayoutManager(this);
         mRecyclerView.setLayoutManager(mLayoutManger);
 
-        myDateset = new String[]{"JAVA","Object-C","C","Android","Python","Ruby","HTML5"};
+        myDateset = new String[]{"JAVA","Object-C","C","Android","Python","Ruby","HTML5","C++","SQL","Swift","GO"};
         mAdapter = new MyAdapter(this,myDateset);
         mRecyclerView.setAdapter(mAdapter)  ;
     }
@@ -52,7 +52,6 @@ public class MainActivity extends AppCompatActivity {
                 mTextView = (TextView) itemView.findViewById(R.id.textView);
                 v.setOnClickListener(this);
             }
-
             @Override
             public void onClick(View v) {
                 String text = "I love " + mTextView.getText()+ ".";
