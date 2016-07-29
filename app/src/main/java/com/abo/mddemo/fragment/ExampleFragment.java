@@ -13,6 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.abo.mddemo.example.CardViewAvtivity;
 import com.abo.mddemo.widget.DividerItemDecoration;
 import com.abo.mddemo.example.EditTextExampleActivity;
 import com.abo.mddemo.R;
@@ -62,6 +63,10 @@ public class ExampleFragment extends Fragment {
                     break;
                 case 1:
                     intent = new Intent(getActivity(), EditTextExampleActivity.class);
+                    startActivity(intent);
+                    break;
+                case 2:
+                    intent = new Intent(getActivity(), CardViewAvtivity.class);
                     startActivity(intent);
                     break;
             }
