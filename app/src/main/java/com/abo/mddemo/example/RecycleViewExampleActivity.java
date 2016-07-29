@@ -1,4 +1,4 @@
-package com.abo.mddemo;
+package com.abo.mddemo.example;
 
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
@@ -13,6 +13,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import com.abo.mddemo.widget.DividerItemDecoration;
+import com.abo.mddemo.R;
 
 /**
  * Created by abo on 16/7/27.
@@ -30,6 +33,15 @@ public class RecycleViewExampleActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitle("RecycleViewExample");
         setSupportActionBar(toolbar);
+        getSupportActionBar().setHomeButtonEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
 
         mRecyclerView = (RecyclerView) findViewById(R.id.recyclerView);
 

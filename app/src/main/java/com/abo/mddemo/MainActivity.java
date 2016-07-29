@@ -81,5 +81,15 @@ public class MainActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.menu_main,menu);
         return true;
     }
+
+    public boolean onOptionsItemSelected(MenuItem menuItem){
+        int id = menuItem.getItemId();
+
+        if(id == R.id.action_settings){
+            return true;
+        }
+        return super.onOptionsItemSelected(menuItem);
+    }
+
 }
 

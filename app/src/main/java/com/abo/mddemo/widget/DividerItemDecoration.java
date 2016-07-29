@@ -1,4 +1,4 @@
-package com.abo.mddemo;
+package com.abo.mddemo.widget;
 
 import android.content.Context;
 import android.content.res.TypedArray;
