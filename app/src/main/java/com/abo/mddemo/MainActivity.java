@@ -12,7 +12,7 @@ import android.view.MenuItem;
 import com.abo.mddemo.fragment.AboutFragment;
 import com.abo.mddemo.fragment.ExampleFragment;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity{
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mActionBarDrawerToggle;
     private NavigationView mNavigationView;
@@ -90,6 +90,5 @@ public class MainActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(menuItem);
     }
-
 }
 
