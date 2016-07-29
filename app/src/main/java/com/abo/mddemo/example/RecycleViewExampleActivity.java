@@ -34,7 +34,8 @@ public class RecycleViewExampleActivity extends AppCompatActivity {
         toolbar.setTitle("RecycleViewExample");
         setSupportActionBar(toolbar);
         getSupportActionBar().setHomeButtonEnabled(true);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        //返回案件图标
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override

@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.View;
 
 import com.abo.mddemo.R;
 
@@ -19,6 +20,15 @@ public class CardViewAvtivity extends AppCompatActivity{
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitle("Card View");
         setSupportActionBar(toolbar);
+        //设置返回按键
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        //响应按键
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
 
     }
 }
