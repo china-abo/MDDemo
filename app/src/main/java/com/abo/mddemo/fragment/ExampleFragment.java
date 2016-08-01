@@ -14,6 +14,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.abo.mddemo.example.AppBarActivity;
+import com.abo.mddemo.example.BottomTabActivity;
 import com.abo.mddemo.example.CardViewAvtivity;
 import com.abo.mddemo.widget.DividerItemDecoration;
 import com.abo.mddemo.example.EditTextExampleActivity;
@@ -72,6 +73,9 @@ public class ExampleFragment extends Fragment {
                     break;
                 case 3:
                     intent = new Intent(getActivity(),AppBarActivity.class);
+                    startActivity(intent);
+                case 4:
+                    intent = new Intent(getActivity(), BottomTabActivity.class);
                     startActivity(intent);
             }
         }

@@ -19,6 +19,7 @@
         <activity android:name=".example.EditTextExampleActivity"/>
         <activity android:name=".example.CardViewAvtivity"/>
         <activity android:name=".example.AppBarActivity"/>
+        <activity android:name=".example.BottomTabActivity"/>
     </application>
 
 </manifest>
